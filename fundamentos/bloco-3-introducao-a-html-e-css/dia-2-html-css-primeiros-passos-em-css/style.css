@@ -1,0 +1,38 @@
+h1 {
+    font-size: 65px;
+    color: orange;
+    font-family: sans-serif;
+}
+
+ul {
+    background-color: yellow;
+}
+
+.p-ul-green {
+    background-color: greenyellow;
+}
+
+p {
+    font-weight: 600;
+    font-size: 3em;
+}
+
+body {
+    font-size: 16px;
+    font-style: italic;
+    line-height: 50px;
+    text-align: center;
+}
+
+#li-yellow-back {
+    background-color: yellow;
+    text-decoration: line-through;
+} 
+
+#li-red-back {
+    background-color: red;
+}
+
+#li-brown-back {
+    background-color: brown;
+}
