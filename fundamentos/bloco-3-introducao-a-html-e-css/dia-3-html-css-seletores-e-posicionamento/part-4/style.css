@@ -27,3 +27,37 @@ li {
 li em {
     font-weight: bold;
 }
+
+.liblue {
+    color: blue;
+}
+
+a {
+    text-decoration: none;
+    color:black;
+}
+
+li.StackOverFlow a:hover{
+    font-weight: bold;
+    color: orange;
+}
+
+li.W3Schools a:hover{
+    font-weight: bold;
+    color: green;
+}
+
+li.MDN a:hover{
+    font-weight: bold;
+    color: black;
+}
+
+li.DevDocs a:hover{
+    font-weight: bold;
+    color: yellow;
+}
+
+li.Trybe a:hover{
+    font-weight: bold;
+    color: greenyellow;
+}
