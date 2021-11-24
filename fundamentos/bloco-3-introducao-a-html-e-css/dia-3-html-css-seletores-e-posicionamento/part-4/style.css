@@ -1,16 +1,19 @@
 /* 1. */
+
 ol {
     background: yellow;
 }
 
-li.par {
+ol li:nth-child(even) {
     color: green;
 }
 
-li.impar {
+ol li:nth-child(odd) {
     text-transform: uppercase;
 }
+
 /* 2. */
+
 h1,h2,h3 {
     color: red;
 }
@@ -20,6 +23,8 @@ h1,h2,h3 em {
     border: 1px solid black;
 }
 
+/* 3. */
+
 li {
     font-size: 20px;
 }
@@ -28,14 +33,22 @@ li em {
     font-weight: bold;
 }
 
-.liblue {
+/* 4. */
+
+li:nth-child(-n+3) {
     color: blue;
+}
+
+li[class^="Java"]{
+    background: hotpink;
 }
 
 a {
     text-decoration: none;
     color:black;
 }
+
+/* 5 */
 
 li.StackOverFlow a:hover{
     font-weight: bold;
