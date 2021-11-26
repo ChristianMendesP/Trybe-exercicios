@@ -12,5 +12,3 @@ let result = subtracao;
 
 
 console.log(result);
-
-
