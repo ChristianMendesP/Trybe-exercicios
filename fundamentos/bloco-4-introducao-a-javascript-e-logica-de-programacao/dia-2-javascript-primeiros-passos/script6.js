@@ -5,7 +5,11 @@ for (let eachNumber of numbers) {
   if (eachNumber % 2 === 1) {
     counter=counter+1;
   }
-
 }
 
-console.log(counter);
+if (counter === 0) {
+  console.log("Nenhum valor encontrado");
+} else {
+ console.log("Odd numbers: ",counter);
+}
+
