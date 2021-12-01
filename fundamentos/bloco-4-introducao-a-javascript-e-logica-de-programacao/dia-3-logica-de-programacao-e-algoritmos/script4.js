@@ -1,25 +1,25 @@
 let n = 7;
 let asterisk = "";
-let spaces = "";
+let sideSpaces = "";
 let aux = 1;
 let array="";
-let numAst = 0;
-let numSpc = 0;
+let numInner = 0;
+let numSideSpaces = 0;
 
 for (let rows = 0; rows < n; rows += 2) {
-    numAst = rows + 1;
-    numSpc = n - numAst;
-    for (let counterAsterisk = 1; counterAsterisk <= numAst; counterAsterisk+=1) {
+    numInner = rows + 1;
+    numSideSpaces = n - numInner;
+    for (let counterAsterisk = 1; counterAsterisk <= numInner; counterAsterisk+=1) {
         asterisk = asterisk + "*"
     }
-    for (let counterSpaces = 1; counterSpaces <= numSpc / 2; counterSpaces+=1) {
-        spaces = spaces + " ";
+    for (let counterSpaces = 1; counterSpaces <= numSideSpaces / 2; counterSpaces+=1) {
+        sideSpaces = sideSpaces + " ";
     }
-    array = spaces + asterisk + spaces;
+    array = sideSpaces + asterisk + sideSpaces;
     console.log(array);
     array = "";
-    numSpc = 0;
-    numAst = 0;
+    numSideSpaces = 0;
+    numInner = 0;
     asterisk = "";
-    spaces = "";
+    sideSpaces = "";
 }
