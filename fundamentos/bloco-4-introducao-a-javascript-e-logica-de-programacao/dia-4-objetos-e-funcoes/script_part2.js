@@ -1,4 +1,16 @@
-let arrayNumbers = [2, 3, 2, 5, 8, 2, 3];
+let number = 5;
+
+console.log(sumUntil(number));
+
+function sumUntil(number) {
+  let sum = 0;
+  for (let n = 1; n<= number; n += 1) {
+    sum += n;
+  }
+  return(sum);
+}
+
+/* let arrayNumbers = [2, 3, 2, 5, 8, 2, 3];
 
 function mostRepeated(arrayNumbers) {
 
@@ -31,7 +43,7 @@ function theGreatest(array) {
     }
   }
   return (indexGreatest);
-}
+} */
 
 
 /* let arrayNumbers = [2, 3, 6, 7, 10, 1];
