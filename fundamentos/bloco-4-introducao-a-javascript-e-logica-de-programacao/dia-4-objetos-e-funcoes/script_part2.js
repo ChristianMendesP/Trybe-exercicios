@@ -1,4 +1,40 @@
-let arrayNumbers = [2, 3, 6, 7, 10, 1];
+let arrayNumbers = [2, 3, 2, 5, 8, 2, 3];
+
+function mostRepeated(arrayNumbers) {
+
+  let compare;
+  let counter = [];
+  let howMany = 0;
+  for (index1 = 0; index1 < arrayNumbers.length; index1 += 1) {
+    compare = arrayNumbers[index1];
+    for (index2 = 0; index2 < arrayNumbers.length; index2 += 1) {
+      if (arrayNumbers[index1] === arrayNumbers[index2]) {
+        howMany += 1;
+      }
+    }
+    counter.push(howMany);
+    howMany = 0;
+  }
+
+  let indexOfMostRepeated = theGreatest(counter);
+
+  let result = arrayNumbers[indexOfMostRepeated];
+
+  return (result);
+
+}
+function theGreatest(array) {
+  let indexGreatest = 0;
+  for (let index = 1; index < array.length; index += 1) {
+    if (array[index] > array[indexGreatest]) {
+      indexGreatest = index;
+    }
+  }
+  return (indexGreatest);
+}
+
+
+/* let arrayNumbers = [2, 3, 6, 7, 10, 1];
 
 let result = theSmallest(arrayNumbers);
 
@@ -12,7 +48,7 @@ function theSmallest(array) {
     }
   }
   return(indexSmallest);
-}
+} */
 
 
 /* let arrayNumbers = [2, 3, 6, 7, 10, 1];
