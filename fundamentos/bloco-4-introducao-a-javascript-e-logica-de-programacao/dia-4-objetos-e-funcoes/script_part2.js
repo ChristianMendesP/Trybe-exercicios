@@ -1,4 +1,31 @@
-let number = 5;
+let word = "trybe";
+let ending = "be";
+
+let result = verificaFimPalavra(word, ending);
+
+console.log(result);
+
+
+function verificaFimPalavra(word, ending) {
+
+let counter = 0;
+
+for (let index = 0; index < ending.length; index += 1) {
+  if (word[word.length-1-index] === ending[ending.length-1-index] ) {
+    counter += 1;
+  }
+}
+if (counter === ending.length) {
+  return(true);
+} else {
+  return(false);
+}
+
+}
+
+
+
+/* let number = 5;
 
 console.log(sumUntil(number));
 
@@ -8,7 +35,9 @@ function sumUntil(number) {
     sum += n;
   }
   return(sum);
-}
+} */
+
+
 
 /* let arrayNumbers = [2, 3, 2, 5, 8, 2, 3];
 
