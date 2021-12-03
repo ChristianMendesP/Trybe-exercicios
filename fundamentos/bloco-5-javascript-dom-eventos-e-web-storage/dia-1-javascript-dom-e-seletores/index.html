@@ -52,10 +52,16 @@
       paragraph[index].innerText = "Daqui a 2 nos me vejo gordo e feio";
     }
 
-    const square = document.getElementsByClassName("main-content");
+    const sideSquare = document.getElementsByClassName("main-content");
 
-    for (let index = 0; index < square.length; index += 1) {
-      square[index].style.backgroundColor = "rgb(76,164,109)";
+    for (let index = 0; index < sideSquare.length; index += 1) {
+      sideSquare[index].style.backgroundColor = "rgb(76,164,109)";
+    }
+
+    const centerSquare = document.getElementsByClassName("center-content");
+
+    for (let index = 0; index < centerSquare.length; index += 1) {
+      centerSquare[index].style.backgroundColor = "white";
     }
 
         /*
