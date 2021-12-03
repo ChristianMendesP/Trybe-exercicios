@@ -64,7 +64,13 @@
       centerSquare[index].style.backgroundColor = "white";
     }
 
-    document.getElementsByTagName("h1")[0].innerText = "Exercício 5.1 - JavaScript"
+    document.getElementsByTagName("h1")[0].innerText = "Exercício 5.1 - JavaScript";
+
+    for (let index = 0; index < paragraph.length; index += 1) {
+      paragraph[index].innerText = paragraph[index].innerText.toLowerCase();
+    }
+
+
 
         /*
     Aqui você vai modificar os elementos já existentes utilizando apenas as funções:
