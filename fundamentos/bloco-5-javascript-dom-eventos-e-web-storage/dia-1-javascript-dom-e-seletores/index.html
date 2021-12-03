@@ -48,6 +48,8 @@
 
     const paragraph = document.getElementsByTagName("p");
 
+    console.log(paragraph);
+
     for (let index = 0; index < paragraph.length; index += 1) {
       paragraph[index].innerText = "Daqui a 2 nos me vejo gordo e feio";
     }
@@ -68,6 +70,18 @@
 
     for (let index = 0; index < paragraph.length; index += 1) {
       paragraph[index].innerText = paragraph[index].innerText.toLowerCase();
+    }
+
+    showPs(paragraph);
+
+    function showPs(list) {
+      let paragraph = list;
+      for (let index = 0; index < paragraph.length; index += 1) {
+      console.log(paragraph[index].innerText);
+    }
+
+    return 1;
+
     }
 
 
