@@ -1,0 +1,76 @@
+/* 1. */
+
+ol {
+    background: yellow;
+}
+
+ol li:nth-child(even) {
+    color: green;
+}
+
+ol li:nth-child(odd) {
+    text-transform: uppercase;
+}
+
+/* 2. */
+
+h1,h2,h3 {
+    color: red;
+}
+
+h1,h2,h3 em {
+    font-size: 40px;
+    border: 1px solid black;
+}
+
+/* 3. */
+
+li {
+    font-size: 20px;
+}
+
+li em {
+    font-weight: bold;
+}
+
+/* 4. */
+
+li:nth-child(-n+3) {
+    color: blue;
+}
+
+li[class^="Java"]{
+    background: hotpink;
+}
+
+a {
+    text-decoration: none;
+    color:black;
+}
+
+/* 5 */
+
+li.StackOverFlow a:hover{
+    font-weight: bold;
+    color: orange;
+}
+
+li.W3Schools a:hover{
+    font-weight: bold;
+    color: green;
+}
+
+li.MDN a:hover{
+    font-weight: bold;
+    color: black;
+}
+
+li.DevDocs a:hover{
+    font-weight: bold;
+    color: yellow;
+}
+
+li.Trybe a:hover{
+    font-weight: bold;
+    color: greenyellow;
+}
