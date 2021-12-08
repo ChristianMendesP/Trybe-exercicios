@@ -148,9 +148,50 @@ for (let i = 0; i < dezDaysList.length; i += 1) {
       if (event.target.style.color === colorTask) {
         event.target.style.color = originalColor;
       } else {
-      event.target.style.color = colorTask;
+        event.target.style.color = colorTask;
       }
     }
   })
 }
+
+// Bonus
+// click on the button
+let buttonComp = document.querySelector('#btn-add');
+
+buttonComp.addEventListener('click', function () {
+  let newItem = document.createElement('li');
+  let fatherComp = document.querySelector('.task-list');
+  newItem.innerText = document.querySelector('#task-input').value;
+
+  if (newItem.innerText === '') {
+    alert('Erro');
+  } else {
+    fatherComp.appendChild(newItem);
+    document.querySelector('#task-input').value = '';
+  }
+})
+
+// pressing enter
+let pressEnter = document.querySelector('#task-input');
+
+pressEnter.addEventListener('keyup', function (event) {
+  let newItem = document.createElement('li');
+  let fatherComp = document.querySelector('.task-list');
+  newItem.innerText = document.querySelector('#task-input').value;
+
+  let enter = event.key;
+
+  if (enter == 'Enter') {
+
+    if (newItem.innerText === '') {
+      alert('Erro');
+    } else {
+      fatherComp.appendChild(newItem);
+      document.querySelector('#task-input').value = '';
+    }
+
+  }
+})
+
+
 
