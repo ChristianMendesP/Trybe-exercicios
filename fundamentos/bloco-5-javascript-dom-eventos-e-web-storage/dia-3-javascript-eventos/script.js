@@ -135,7 +135,22 @@ blockColor.addEventListener('click', function () {
 });
 
 // Exercice 10
-let originalColor = element[0].style.color;
+for (let i = 0; i < dezDaysList.length; i += 1) {
 
+  let dayTask = element[i];
+  originalColor = dayTask.style.color; // = 'rgb(119,119,119)';
 
+  dayTask.addEventListener('click', function (event) {
+
+    if (blockColor.className === 'task selected') {
+      let colorTask = document.querySelector('.selected').style.backgroundColor;
+
+      if (event.target.style.color === colorTask) {
+        event.target.style.color = originalColor;
+      } else {
+      event.target.style.color = colorTask;
+      }
+    }
+  })
+}
 
