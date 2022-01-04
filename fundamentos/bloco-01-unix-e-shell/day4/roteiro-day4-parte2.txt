@@ -1,0 +1,11 @@
+cd Documents/trybe-exercicios/fundamentos/bloco-01-unix-e-shell/day4/unix-tests/
+
+ls -l
+
+chmod 666 bunch_of_things.txt
+ls -l
+
+chmod 444 bunch_of_things.txt
+ls -l
+
+chmod 644 bunch_of_things.txt 

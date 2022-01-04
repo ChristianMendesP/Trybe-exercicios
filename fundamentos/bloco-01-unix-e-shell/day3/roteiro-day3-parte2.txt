@@ -1,0 +1,14 @@
+cat countries.txt
+less countries.txt
+less countries.txt; space... q
+less countries.txt /Zambia
+less countries.txt /Brazil
+grep -i brazil countries.txt
+grep -iv 'fox' phrases.txt
+wc -w phrases.txt
+wc -l phrases.txt
+touch empty.tbt; touch empty.pdf
+ls -a
+ls *txt
+ls *t
+man ls

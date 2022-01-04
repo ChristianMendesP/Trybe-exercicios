@@ -1,0 +1,23 @@
+sudo apt-get install cmatrix
+cmatrix
+^Z
+
+sudo apt-get install fortune
+
+fortune > fortune.txt
+
+wc -w fortune.txt
+
+sudo apt-get install sl
+sl
+sl -F
+
+sudo apt-get install cowsay
+cowsay 'Boa madrugada'
+cat fortune.txt | cowsay
+
+factor 42
+
+cat fortune.txt | rev
+
+telnet towel.blinkenlights.nl

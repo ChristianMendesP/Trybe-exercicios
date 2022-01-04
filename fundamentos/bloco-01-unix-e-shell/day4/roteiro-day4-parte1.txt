@@ -1,0 +1,31 @@
+cd Documents/trybe-exercicios/fundamentos/bloco-01-unix-e-shell/day4/unix-tests/
+
+cat > skills2.txt
+Internet
+Unix
+Bash
+
+cat >> skills2.txt
+Html
+JS
+CSS
+Python
+NodeJS
+
+sort < skills2.txt
+
+wc -l skills2.txt
+
+sort < skills2.txt | head -3 > top_skills.txt 
+
+grep br phrases2.txt | wc -l
+
+grep -v br phrases2.txt | wc -l
+
+cat >> phrases2.txt 
+Equador
+Butao
+
+cat phrases2.txt countries.txt > bunch_of_things.txt
+
+sort bunch_of_things.txt

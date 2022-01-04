@@ -1,0 +1,16 @@
+ls; cd Documents; cd trybe-exercicios; cd fundamentos; cd bloco-01-unix-e-shell; mkdir day3; cd day3; mkdir unix_tests; cd unix_tests
+touch trybe.txt
+cp trybe.txt trybe_backup.txt
+cd unix_tests; mv trybe.txt trybe1.txt
+mkdir backup
+mv trybe_backup.txt ~/Documents/trybe-exercicios/fundamentos/bloco-01-unix-e-shell/day3/unix_tests/backup
+mkdir backup2
+cd backup; mv trybe_backup.txt ~/Documents/trybe-exercicios/fundamentos/bloco-01-unix-e-shell/day3/unix_tests/backup2
+cd ..; rmdir backup
+mv backup2 backup
+pwd; ls *
+rm -rf backup
+clear
+head -5 skills.txt 
+tail -4 skills.txt
+rm *.txt
