@@ -1,18 +1,101 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
   <title>Cadastro de Currículo</title>
 </head>
+
 <body>
 
   <main>
-    <h1>Cadastro de Currículo</h1>
 
+    <form action="" method="get">
+      <h1>Cadastro de Currículo</h1>
+
+      <fieldset>
+        <legend>Dados pessoais</legend>
+
+        <label for="name-id">Nome completo: </label>
+        <input type="text" name="full-name" id="name-id" maxlength="40" required autocomplete="off">
+
+        <br><br>
+
+        <label for="email-id">Endereço de e-mail: </label>
+        <input type="email" name="email" id="email-id" maxlength="50" required autocomplete="off">
+
+        <br><br>
+
+        <label for="cpf-id">CPF: </label>
+        <input type="text" name="cpf" id="cpf-id" maxlength="11" required autocomplete="off">
+
+        <br><br>
+
+        <label for="adress">Endereço: </label>
+        <input type="text" name="adress" id="adress-id" maxlength="200" required autocomplete="off">
+
+        <br><br>
+
+        <label for="city">Cidade: </label>
+        <input type="text" name="city" id="city-id" maxlength="28" required autocomplete="off">
+
+        <br><br>
+
+        <label for="state-id">Estado: </label>
+        <select name="state" id="state-id" required autocomplete="off">
+        </select>
+
+        <br><br>
+
+        <p>Moradia: </p>
+        <input type="radio" name="home-type" id="house-id" required autocomplete="off">
+        <label for="house-id">Casa</label>
+        <input type="radio" name="home-type" id="ap-id" required autocomplete="off">
+        <label for="ap-ip">Apartamento</label>
+
+        <fieldset>
+          <legend for="last-work">Dados do último emprego</legend>
+
+          <label for="abstract-id">Resumo do currículo</label>
+          <textarea name="abstract" id="abstract-id" cols="30" rows="10" maxlength="1000" required autocomplete="off"></textarea>
+
+          <br><br>
+
+          <label for="role-id">Cargo: </label>
+          <input type="text" name="role" id="role-id" maxlength="40" required autocomplete="off">
+
+          <br><br>
+
+          <label for="role-description-id">Descrição do cargo: </label>
+          <input type="text" name="role-description" id="role-description-id" maxlength="500" required autocomplete="off">
+
+          <br><br>
+
+          <label for="date-begin-id">Data de início</label>
+          <input type="text" name="date-begin" id="date-begin-id" placeholder="dd/mm/aaa" pattern="\^([0-2][0-9]|(3)[0-1])(\/)(((0)[0-9])|((1)[0-2]))(\/)\d{4}$" required autocomplete="off">
+
+          <br><br>
+
+
+
+
+
+        </fieldset>
+
+
+      </fieldset>
+
+      <br><br>
+      
+      <input type="submit" value="Enviar" id="submit-button-id">
+
+    </form>
 
   </main>
-  
+  <script src="script.js"></script>
 </body>
+
 </html>
