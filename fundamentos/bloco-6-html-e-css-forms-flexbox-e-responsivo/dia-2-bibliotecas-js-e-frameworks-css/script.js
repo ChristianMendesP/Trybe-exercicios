@@ -54,7 +54,7 @@ submitButton.addEventListener('click', (event) => {
   //event.preventDefault();
 });
 
-// Date validation
+/* // Date validation
 submitButton.addEventListener('click', () => {
   let date = document.querySelector('#date-begin-id');
   let text = date.value;
@@ -108,6 +108,6 @@ let date = document.querySelector('#date-id');
 date.pattern = "/^([0-2][0-9]|(3)[0-1])(\/)(((0)[0-9])|((1)[0-2]))(\/)\d{4}$/i";
 date.addEventListener('keyup', ()=> {
   limitChar(date, 8);
-});
+}); */
 
-
+document.getElementById('date-id').DatePickerX.init();

@@ -1,8 +1,7 @@
-body {
-  background-color: black;
-  color: white;
-}
-
 #abstract-id {
   width: 100%;
+}
+
+body {
+  background-color: rgb(255, 246, 194);
 }
