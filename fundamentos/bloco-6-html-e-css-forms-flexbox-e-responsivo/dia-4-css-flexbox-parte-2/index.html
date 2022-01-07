@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS FLEXBOX - ALIGN SELF</title>
+    <style>
+      .container {
+        border: 1px solid black;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        height: 300px;
+        margin: auto;
+        width: 500px;
+      }
+
+      .keep {
+        background-color: #FAA488;
+        list-style: none;
+      }
+
+      .change {
+        /* Altere a propriedade align-self. */
+        background-color: #FBD26A;
+        align-self: flex-start;
+        list-style: none;
+      }
+
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="keep">REFERÊNCIA</div>
+      <div class="change">ELEMENTO TESTE</div>
+      <div class="keep">REFERÊNCIA</div>
+    </ul>
+  </body>
+</html>
