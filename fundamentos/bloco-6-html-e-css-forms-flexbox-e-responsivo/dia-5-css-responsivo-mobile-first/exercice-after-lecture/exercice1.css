@@ -19,7 +19,7 @@ article {
 }
 
 h1 {
-
+  font-size: x-large;
 }
 
 h2 {
@@ -43,5 +43,5 @@ figure {
 }
 
 figcaption {
-  font-size: .8em;
+  font-size: large
 }
