@@ -12,6 +12,7 @@
 
 body p {
   font-size: larger;
+  margin: 10px;
 }
 
 article {
@@ -20,6 +21,7 @@ article {
 
 h1 {
   font-size: x-large;
+  margin-bottom: 20px;
 }
 
 h2 {
@@ -28,6 +30,7 @@ h2 {
 
 img {
     max-width: 100%;
+    /* width: 300px; */
     margin: 20px auto;
 }
 
@@ -36,7 +39,10 @@ main {
 }
 
 section {
-
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-basis: 100px;
 }
 
 figure {
