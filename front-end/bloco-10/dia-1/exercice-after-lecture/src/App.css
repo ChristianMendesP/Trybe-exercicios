@@ -1,0 +1,43 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: burlywood;
+}
+
+.header, .footer {
+  margin: 50px;
+  color: black;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+ul {
+  width: 100%;
+  min-height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  box-sizing: border-box;
+  align-items: center;
+  align-content: space-between;
+  list-style: none;
+}
+
+li {
+  border-radius: 10px;
+  padding: 20px;
+  /* border: 1px solid red; */
+  color: black;
+  background-color: tomato;
+  font-size: larger;
+}
+
+.item {
+}
