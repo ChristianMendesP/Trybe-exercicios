@@ -7,7 +7,7 @@ class Pokedex extends Component {
       <main>
         <h1 className="title">Pokedex</h1>
         <section className="pokedex">
-        {this.props.array.map((element) => <Pokemon poke={element} />)}
+        {this.props.array.map((element, index) => <Pokemon poke={element} key={index}/>)}
         </section>
       </main>
     );
