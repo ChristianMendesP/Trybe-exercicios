@@ -1,0 +1,14 @@
+
+fieldset {
+  display: flex;
+  flex-direction: column;
+}
+
+select {
+  width: 200px;
+}
+
+.state-section , .radio-habitation-section {
+  display: flex;
+  align-items: center ;
+}
