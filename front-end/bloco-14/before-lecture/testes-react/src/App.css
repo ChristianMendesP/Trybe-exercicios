@@ -1,0 +1,11 @@
+.App {
+  text-align: center;
+}
+
+.valid {
+  color: green;
+}
+
+.not-valid {
+  color: red;
+}
