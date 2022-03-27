@@ -28,7 +28,12 @@ class App extends Component {
           name="input"
           value={input}
           onChange={this.handleState}></input>
-        <button type="button" id="add-btn" onClick={() => this.setState({ input: ''}, () => add(input))}>Adicionar</button>
+        <button
+          type="button"
+          onClick={() => this.setState({ input: '' }, () => add(input))}
+        >
+          Adicionar
+        </button>
         <div>
           <ul>
             { typed.map((element, index) => <li key={ index }>{ element }</li>)}
@@ -44,7 +49,7 @@ const dispatchToProps = (dispatch) => ({
 })
 
 const storeToProps = (store) => ({
-  typed: store.reducerAddTask.task,
+  typed: store.reducerAddTask.tasks,
 })
 
 export default connect(storeToProps, dispatchToProps)(App);

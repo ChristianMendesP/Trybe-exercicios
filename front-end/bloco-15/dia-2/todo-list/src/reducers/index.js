@@ -1,11 +1,11 @@
 import { combineReducers } from 'redux';
 
-const INITIAL_STATE = { task: [] };
+const INITIAL_STATE = { tasks: [] };
 
 const reducerAddTask = (state = INITIAL_STATE, action ) => {
   switch (action.type) {
     case 'ADD_TASK':
-      return { task: [ ...state.task, action.newTask] };
+      return { tasks: [ ...state.tasks, action.newTask] };
     default:
       return INITIAL_STATE;
   }
