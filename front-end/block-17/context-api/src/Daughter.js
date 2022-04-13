@@ -1,19 +1,15 @@
-import React, { Component } from 'react';
+import React, { useContext } from 'react';
 import MyContext from './context/MyContext';
 
-class Daughter extends Component {
-  render() {
-    const value = this.context;
+const Daughter = () => {
+    const {money, spendMoney} = useContext(MyContext);
     return (
       <>
         <h3>Eu sou a filha</h3>
-        <p>Tenho {value.money}</p>
-        <button onClick={value.spendMoney}>Gastar 10</button>
+        <p>Tenho {money}</p>
+        <button onClick={() => spendMoney(money - 10)}>Gastar 10</button>
       </>
     );
-  }
 }
-
-Daughter.contextType = MyContext;
 
 export default Daughter;

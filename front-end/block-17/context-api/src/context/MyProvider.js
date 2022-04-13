@@ -1,27 +1,16 @@
-import React, { Component } from 'react';
+import React, { useState } from 'react';
 import MyContext from './MyContext';
 
-class MyProvider extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      money: 1000000,
-    }
-  }
+function MyProvider({ children }) {
 
-  spendMoney = () => {
-    this.setState((prevState) => ({ money: prevState.money - 10 }));
-  }
+  const [money, spendMoney] = useState(1000000);
+  const myProps = { money, spendMoney };
   
-  render() {
-    const myProps = { money: this.state.money, spendMoney: this.spendMoney };
-    
-    return (
-      <MyContext.Provider value={myProps}>
-        {this.props.children}
-      </MyContext.Provider>
-    );
-  }
+  return (
+    <MyContext.Provider value={myProps}>
+      {children}
+    </MyContext.Provider>
+  );
 }
 
 export default MyProvider;

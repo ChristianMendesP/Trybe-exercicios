@@ -3,9 +3,7 @@ import GreatGrandfather from './GreatGrandfather';
 
 function App() {
   return (
-    <div className="App">
-      <GreatGrandfather />
-    </div>
+    <GreatGrandfather />
   );
 }
 
